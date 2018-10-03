@@ -160,7 +160,7 @@ contract('DappTokenCrowdsale', function([_, wallet, investor1, investor2, founde
 
       it('forwards funds to the wallet', async function () {
         const balance = await web3.eth.getBalance(this.wallet);
-        expect(balance.toNumber()).to.be.above(ether(100));
+        expect(balance.toNumber()).to.be.above(ether(100).toNumber());
       });
     });
 
